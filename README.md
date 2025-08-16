@@ -1,15 +1,8 @@
 # DC_Bot
 This is a Python-based Discord bot that features keyword configuration, real-time price crawling, CSV export, and interactive chart generation. Users can query product prices using simple commands, with results visualized in chart form.
 # Project Structure
-* │
-* ├── scheduler.py       # Main script to run the bot
-* ├── shop.py            # Web crawling logic
-* ├── config.py          
-* ├── .gitignore 
-* ├── chromedriver  
-* ├── README.md
-* ├── interactive_chart.html     # Generated interactive chart (dynamic)
-* └── result.csv                 #  Crawler output file (dynamic)
+![alt text](image.png)
+
 ## Features
 * Allows flexible product selection without regional restrictions.
 * Some sellers list many products within detailed descriptions, so accurately extracting prices by keywords improves usability.
