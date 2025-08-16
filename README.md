@@ -1,10 +1,34 @@
-## 使用方式
-1. 在 config 中填入你的 Discord Bot Token
-2. 安裝套件以及設定：
-    一、 請依照自己目前的google chrome版本下載google driver 
-    二、 pip install pandas plotly discord.py python-dotenv selenium webdriver-manager
-    三、 在創建discord bot 時請打開Privileged Gateway Intents全部開關 & Bot Permissions 也勾選Send Messages 和 Attach Files
-3. 執行 `scheduler.py` 啟動，即可在discord上指令操作
-4. !kwset 商品名稱
-   !kw 商品名稱
-   
+# DC_Bot
+This is a Python-based Discord bot that features keyword configuration, real-time price crawling, CSV export, and interactive chart generation. Users can query product prices using simple commands, with results visualized in chart form.
+# Project Structure
+│
+├── scheduler.py       # Main script to run the bot
+├── shop.py            # Web crawling logic
+├── config.py          
+├── .gitignore 
+├── chromedriver  
+├── README.md
+├── interactive_chart.html     # Generated interactive chart (dynamic)
+└── result.csv                 #  Crawler output file (dynamic)
+## Features
+* Allows flexible product selection without regional restrictions.
+* Some sellers list many products within detailed descriptions, so accurately extracting prices by keywords improves usability.
+* Setting filters to exclude unreasonable prices enhances data quality.
+* When many products are listed on the platform, the line chart can become too dense and cluttered.
+* Consider better visualization methods like interactive filtering, grouping, or pagination to improve clarity and user experience.
+* And more!
+
+## Getting Started
+* Add your Discord Bot Token to the config file.
+* Install packages and set up:
+    a. Download the ChromeDriver version that matches your installed Google Chrome browser.
+    b. Run:pip install pandas plotly discord.py python-dotenv selenium webdriver-manager
+
+Then, run the bot by running the `scheduler.py` file.
+```
+python scheduler.py
+```
+
+## Usage
+ `!kwset Product Name` 
+
